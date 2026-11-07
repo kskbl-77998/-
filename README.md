@@ -117,7 +117,7 @@ twos-complement-simulator/
 ├── docs/
 │   ├── Team_Task_Allocation.md      # 五人任务分配
 │   ├── GitHub_Setup_Guide.md        # 仓库搭建与推送手册
-│   ├── algorithm_notes.md           # 算法推导笔记（成员B）
+│   ├── algorithm_notes.md           # 算法推导笔记（张家昂）
 │   └── images/                      # 截图、冲突留档
 ├── src/
 │   ├── core/                        # 核心算法层（零 UI 依赖）
@@ -150,11 +150,11 @@ twos-complement-simulator/
 | `main` | 马子尊 | 稳定版本，只接受 PR 合并 |
 | `chore/scaffold` | 马子尊 | 仓库初始化、规范、模板 |
 | `feat/engine` | 马子尊 | 编排层与入口 |
-| `feature/core-logic` | 成员B | 补码核心算法 |
-| `feature/ui-layout` | 成员C | 界面布局与交互 |
-| `feature/canvas-render` | 成员D | Canvas 渲染与动画 |
-| `docs/feature-proposal` | 成员E | 需求与设计文档 |
-| `test/qa-suite` | 成员E | 测试用例与报告 |
+| `feature/core-logic` | 张家昂 | 补码核心算法 |
+| `feature/ui-layout` | 聂莹莹 | 界面布局与交互 |
+| `feature/canvas-render` | 聂莹莹 | Canvas 渲染与动画（第二阶段） |
+| `docs/feature-proposal` | 韩依桐 | 需求与设计文档 |
+| `test/qa-suite` | 李昆鹏 | 测试用例与报告 |
 
 ### 提交约定
 
@@ -170,7 +170,7 @@ twos-complement-simulator/
 本项目按作业要求**人为制造并解决了一次合并冲突**：
 
 - 冲突文件：`src/ui/app.py` 的 `_init_window()`
-- 起因：成员C 修改窗口尺寸为 `1280x800`，成员D 在同一函数追加画布尺寸参数
+- 起因：聂莹莹把窗口高度改为 `1280x840`，马子尊在同一函数追加画布尺寸参数
 - 结果：保留新尺寸 **并** 保留新参数，双方协商后手工合并
 - 留档：见 [`docs/GitHub_Setup_Guide.md`](docs/GitHub_Setup_Guide.md) 第 6 节与 `docs/images/`
 
@@ -181,10 +181,10 @@ twos-complement-simulator/
 | 姓名 | 学号 | 角色 | 主要贡献 |
 | :--- | :--- | :--- | :--- |
 | **马子尊** | 2610250212 | 项目负责人 / 架构与集成 | 仓库与规范、`engine.py`、集成合并、README |
-| **成员B** | 待填写 | 核心算法工程师 | 四码转换、求补、加法器、溢出判定 |
-| **成员C** | 待填写 | UI/UX 交互设计 | 主窗口布局、控件、状态机、快捷键 |
-| **成员D** | 待填写 | 可视化渲染工程师 | 位网格、进位箭头、数轴动画 |
-| **成员E** | 待填写 | 文档 / 测试 / 展示 | 设计文档、用例矩阵、PPT 与演示视频 |
+| **张家昂** | 待填写 | 核心算法工程师 | 四码转换、求补、加法器、溢出判定 |
+| **聂莹莹** | 待填写 | 界面与可视化渲染 | 主窗口布局、控件、位网格、进位箭头 |
+| **李昆鹏** | 待填写 | 测试与质量保障 | 用例执行、覆盖率报告、Bug 跟踪、演示视频 |
+| **韩依桐** | 待填写 | AI 记录与文档展示 | 设计文档、15 条 AI 记录、PPT 与讲稿 |
 
 完整任务拆解见 [`docs/Team_Task_Allocation.md`](docs/Team_Task_Allocation.md)。
 

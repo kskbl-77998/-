@@ -13,13 +13,13 @@ python -m pytest tests/ --cov=src/core --cov-report=term-missing   # 需安装 p
 
 | 文件 | 覆盖模块 | 负责人 |
 | :--- | :--- | :--- |
-| `test_bits.py` | `src/core/bits.py` | 成员E（成员B 提供断言） |
-| `test_represent.py` | `src/core/represent.py` | 成员E |
-| `test_negate.py` | `src/core/negate.py` | 成员E |
-| `test_adders.py` | `src/core/adders.py` | 成员E |
-| `test_overflow.py` | `src/core/overflow.py` | 成员E |
-| `test_engine.py` | `src/core/engine.py` | 成员E |
-| `test_random_fuzz.py` | 全核心层随机对拍 | 成员B |
+| `test_bits.py` | `src/core/bits.py` | 李昆鹏（张家昂 提供断言） |
+| `test_represent.py` | `src/core/represent.py` | 李昆鹏 |
+| `test_negate.py` | `src/core/negate.py` | 李昆鹏 |
+| `test_adders.py` | `src/core/adders.py` | 李昆鹏 |
+| `test_overflow.py` | `src/core/overflow.py` | 李昆鹏 |
+| `test_engine.py` | `src/core/engine.py` | 李昆鹏 |
+| `test_random_fuzz.py` | 全核心层随机对拍 | 张家昂 |
 
 ## 用例来源
 

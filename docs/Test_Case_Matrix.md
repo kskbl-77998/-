@@ -1,7 +1,7 @@
 # 测试用例矩阵
 
 > 配套：[`Project_Requirements_and_Design.md`](../Project_Requirements_and_Design.md) 第 10 节
-> 维护：成员E　｜　断言依据：成员B　｜　最后更新：2026-11-07
+> 维护：李昆鹏　｜　断言依据：张家昂　｜　最后更新：2026-11-07
 
 本表是**唯一事实来源**：`tests/` 下的每个测试函数都对应这里的一个 TC 编号，函数名必须带上编号（如 `test_tc02_pos_plus_pos_overflow`）。
 

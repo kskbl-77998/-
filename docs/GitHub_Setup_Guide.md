@@ -24,11 +24,11 @@
 * main
   chore/scaffold          马子尊：仓库初始化与规范
   feat/engine             马子尊：编排层与入口
-  feature/core-logic      成员B：核心算法
-  feature/ui-layout       成员C：界面布局
-  feature/canvas-render   成员D：Canvas 渲染
-  docs/feature-proposal   成员E：设计文档
-  test/qa-suite           成员E：测试
+  feature/core-logic      张家昂：核心算法
+  feature/ui-layout       聂莹莹：界面布局
+  feature/canvas-render   聂莹莹：Canvas 渲染（第二阶段）
+  docs/feature-proposal   韩依桐：设计文档与 AI 记录
+  test/qa-suite           李昆鹏：测试
 ```
 
 ---
@@ -211,24 +211,24 @@ git push                            # 首次可能需要 -u origin feature/core-
 
 ### 7.1 制造冲突
 
-**成员C（feature/ui-layout）**
+**聂莹莹（feature/ui-layout）**
 
 ```bash
 git switch feature/ui-layout
 git pull --rebase origin main
-# 编辑 src/ui/app.py，把窗口尺寸改为 1280x800：
-#   self.root.geometry("1280x800")
+# 编辑 src/ui/app.py，把窗口高度改为 1280x840：
+#   self.root.geometry("1280x840")
 git add src/ui/app.py
-git commit -m "feat(ui): 主窗口尺寸调整为 1280x800"
+git commit -m "feat(ui): 主窗口高度调整为 1280x840"
 git push
 ```
 
 → 在 GitHub 上给这条分支开 PR，负责人合并进 `main`。
 
-**成员D（feature/canvas-render）**
+**马子尊（feat/engine）**
 
 ```bash
-git switch feature/canvas-render
+git switch feat/engine
 git pull --rebase origin main
 # 编辑同一函数，追加画布参数：
 #   self.canvas_w, self.canvas_h = 700, 420
@@ -237,7 +237,7 @@ git commit -m "feat(render): 新增画布尺寸参数"
 git push
 ```
 
-**关键一步**：成员C 的 PR 先合并后，成员D 再拉取主干，冲突才会真正发生：
+**关键一步**：聂莹莹的 PR 先合并后，马子尊再拉取主干，冲突才会真正发生：
 
 ```bash
 git fetch origin

@@ -6,13 +6,13 @@
 
 | 文件名 | 内容 | 何时补 | 负责人 |
 | :--- | :--- | :--- | :--- |
-| `run-main.png` | 程序启动后的完整窗口截图 | M3 界面可运行后 | 成员C |
-| `demo-complement.png` | `−5` 求补过程的单步截图 | M2 算法联调后 | 成员B |
-| `demo-overflow.png` | `100 + 50` 溢出、三种判定结论的截图 | M4 集成后 | 成员D |
-| `conflict-marker.png` | VS Code 中 `<<<<<<< HEAD` 冲突标记截图 | 冲突演练当天 | 成员D |
+| `run-main.png` | 程序启动后的完整窗口截图 | M3 界面可运行后 | 聂莹莹 |
+| `demo-complement.png` | `−5` 求补过程的单步截图 | M2 算法联调后 | 张家昂 |
+| `demo-overflow.png` | `100 + 50` 溢出、三种判定结论的截图 | M4 集成后 | 马子尊 |
+| `conflict-marker.png` | VS Code 中 `<<<<<<< HEAD` 冲突标记截图 | 冲突演练当天 | 马子尊 |
 | `conflict-graph.png` | `git log --graph --oneline --all` 截图 | 冲突解决后 | 马子尊 |
-| `pytest-report.png` | `pytest -v` 全绿 + 覆盖率截图 | M2 结束前 | 成员E |
-| `ppt-cover.png` | 答辩 PPT 封面 | M4 | 成员E |
+| `pytest-report.png` | `pytest -v` 全绿 + 覆盖率截图 | M2 结束前 | 李昆鹏 |
+| `ppt-cover.png` | 答辩 PPT 封面 | M4 | 韩依桐 |
 
 ## 截图规范
 
