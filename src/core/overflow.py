@@ -7,7 +7,7 @@
 
 ⚠️ 不变量：三种方法结论一致。一致性校验写进单元测试。
 
-负责人：成员B
+负责人：张家昂
 """
 
 from typing import List
@@ -28,9 +28,9 @@ def detect(a_bits: List[int], b_bits: List[int], sum_bits: List[int], c_out: int
         OverflowReport，其中 method_results 需包含三种方法的文字结论，
         consistent 表示三者是否一致。
     """
-    raise NotImplementedError("TODO(成员B): 实现三种判定并校验一致性")
+    raise NotImplementedError("TODO(张家昂): 实现三种判定并校验一致性")
 
 
 def validate_consistent(report: OverflowReport) -> None:
     """断言三种方法结论一致，不一致则抛 AssertionError。供测试调用。"""
-    raise NotImplementedError("TODO(成员B): 实现一致性断言")
+    raise NotImplementedError("TODO(张家昂): 实现一致性断言")

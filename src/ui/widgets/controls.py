@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """控制条：字长选择、操作数输入、运算选择、播放控制。
 
-负责人：成员C（分支 feature/ui-layout）
+负责人：聂莹莹（分支 feature/ui-layout）
 """
 
 import tkinter as tk
@@ -28,12 +28,12 @@ class ControlPanel(tk.Frame):
 
     def _build(self):
         """按设计文档 7.1 的左栏结构搭建控件。"""
-        raise NotImplementedError("TODO(成员C): 实现字长/输入/运算/按钮/调速/示例库")
+        raise NotImplementedError("TODO(聂莹莹): 实现字长/输入/运算/按钮/调速/示例库")
 
     def read(self):
         """读取当前输入，返回 (width, x_text, y_text, op)。"""
-        raise NotImplementedError("TODO(成员C): 实现输入读取")
+        raise NotImplementedError("TODO(聂莹莹): 实现输入读取")
 
     def set_enabled(self, enabled: bool):
         """RUNNING 状态下禁用输入，避免播放中数据被改。"""
-        raise NotImplementedError("TODO(成员C): 实现控件启用/禁用")
+        raise NotImplementedError("TODO(聂莹莹): 实现控件启用/禁用")

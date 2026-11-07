@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """步骤日志面板：按 Step 序列逐条显示，自动滚动到当前行。
 
-负责人：成员C（分支 feature/ui-layout）
+负责人：聂莹莹（分支 feature/ui-layout）
 """
 
 import tkinter as tk
@@ -23,8 +23,8 @@ class StepPanel(tk.Frame):
         Args:
             steps: Step 列表。
         """
-        raise NotImplementedError("TODO(成员C): 实现日志载入与编号")
+        raise NotImplementedError("TODO(聂莹莹): 实现日志载入与编号")
 
     def goto(self, index):
         """高亮并滚动到第 index 步（从 1 开始）。"""
-        raise NotImplementedError("TODO(成员C): 实现当前行高亮与见即滚动")
+        raise NotImplementedError("TODO(聂莹莹): 实现当前行高亮与见即滚动")

@@ -4,7 +4,7 @@
 ⚠️ 边界：X = -2^(n-1) 时 -X 超出表示范围，本函数返回 None，
    由上层（engine）转换为"该数无相反数"的提示。
 
-负责人：成员B
+负责人：张家昂
 """
 
 from typing import List, Optional, Tuple
@@ -30,4 +30,4 @@ def negate(bits: List[int]) -> Optional[Tuple[List[int], List[int], List[dict]]]
     >>> negate([1, 0, 0, 0, 0, 0, 0, 0]) is None
     True
     """
-    raise NotImplementedError("TODO(成员B): 实现求补，含 -2^(n-1) 边界")
+    raise NotImplementedError("TODO(张家昂): 实现求补，含 -2^(n-1) 边界")

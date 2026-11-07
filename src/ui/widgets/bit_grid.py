@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """位网格控件：一排位方块 + 列高亮 + 进位弧形箭头。
 
-负责人：成员D（分支 feature/canvas-render）
+负责人：聂莹莹（分支 feature/canvas-render）
 
 实现要点（详见设计文档 7.2 可视化映射表）：
     1. 位方块等宽、等间距，使用等宽字体；
@@ -33,8 +33,8 @@ class BitGrid(tk.Frame):
             highlight: 需要高亮的位序号集合。
             carries: 进位字典 {位序号: 0/1}，用于画箭头。
         """
-        raise NotImplementedError("TODO(成员D): 实现位方块与进位箭头绘制")
+        raise NotImplementedError("TODO(聂莹莹): 实现位方块与进位箭头绘制")
 
     def animate_invert(self, before, after, duration_ms=300):
         """求补阶段的逐位翻转动画。"""
-        raise NotImplementedError("TODO(成员D): 实现逐位翻转动画")
+        raise NotImplementedError("TODO(聂莹莹): 实现逐位翻转动画")

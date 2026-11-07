@@ -6,7 +6,7 @@
     2. -2^(n-1) 没有原码与反码表示，应返回 None 并由界面提示"不可表示"；
     3. 移码 = 补码符号位取反，用于阶码比较。
 
-负责人：成员B
+负责人：张家昂
 """
 
 from typing import List, Optional
@@ -21,22 +21,22 @@ def to_sign_magnitude(value: int, width: int) -> Optional[List[int]]:
     >>> to_sign_magnitude(-128, 8) is None
     True
     """
-    raise NotImplementedError("TODO(成员B): 实现原码转换，注意 -2^(n-1) 返回 None")
+    raise NotImplementedError("TODO(张家昂): 实现原码转换，注意 -2^(n-1) 返回 None")
 
 
 def to_ones_complement(value: int, width: int) -> Optional[List[int]]:
     """十进制真值 -> 反码。无法表示时返回 None。"""
-    raise NotImplementedError("TODO(成员B): 实现反码转换")
+    raise NotImplementedError("TODO(张家昂): 实现反码转换")
 
 
 def to_twos_complement(value: int, width: int) -> List[int]:
     """十进制真值 -> 补码。超出范围时抛 OverflowError。"""
-    raise NotImplementedError("TODO(成员B): 实现补码转换")
+    raise NotImplementedError("TODO(张家昂): 实现补码转换")
 
 
 def to_offset_binary(value: int, width: int) -> List[int]:
     """十进制真值 -> 移码（补码符号位取反）。"""
-    raise NotImplementedError("TODO(成员B): 实现移码转换")
+    raise NotImplementedError("TODO(张家昂): 实现移码转换")
 
 
 def four_codes(value: int, width: int) -> dict:
@@ -51,4 +51,4 @@ def four_codes(value: int, width: int) -> dict:
             "offset": [...],
         }
     """
-    raise NotImplementedError("TODO(成员B): 汇总四种码制")
+    raise NotImplementedError("TODO(张家昂): 汇总四种码制")

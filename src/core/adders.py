@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """逐列全加器：返回每一列的完整输入输出，供界面画进位箭头。
 
-负责人：成员B
+负责人：张家昂
 """
 
 from typing import List, Tuple
@@ -26,9 +26,9 @@ def add(a_bits: List[int], b_bits: List[int]) -> Tuple[List[int], List[BitColumn
     >>> c
     0
     """
-    raise NotImplementedError("TODO(成员B): 实现逐列全加，注意从 b0 开始进位")
+    raise NotImplementedError("TODO(张家昂): 实现逐列全加，注意从 b0 开始进位")
 
 
 def add_one(bits: List[int]) -> Tuple[List[int], List[int]]:
     """末位加一，返回 (结果位串, 进位链)。求补的第二步复用此函数。"""
-    raise NotImplementedError("TODO(成员B): 实现末位加一")
+    raise NotImplementedError("TODO(张家昂): 实现末位加一")

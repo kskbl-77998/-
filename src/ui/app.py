@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """主窗口：布局、事件绑定、交互状态机。
 
-当前状态：**布局骨架**（可运行，用于成员C 后续填充控件、成员D 挂载可视化组件）。
+当前状态：**布局骨架**（可运行，用于聂莹莹 后续填充控件、聂莹莹 挂载可视化组件）。
 状态机 IDLE / READY / RUNNING / DONE / ERROR 尚未实现，见 TODO。
 
-负责人：成员C
+负责人：聂莹莹
 """
 
 import tkinter as tk
@@ -39,7 +39,7 @@ class ComplementApp:
     def _init_window(self) -> None:
         """设置窗口尺寸与最小尺寸。
 
-        ⚠️ 冲突演练点：成员D 会在本函数追加画布尺寸参数。
+        ⚠️ 冲突演练点：聂莹莹 会在本函数追加画布尺寸参数。
         """
         self.root.geometry(
             f"{theme.SIZES['window_w']}x{theme.SIZES['window_h']}"
@@ -82,7 +82,7 @@ class ComplementApp:
         self.lbl_width.pack(side=tk.RIGHT, padx=24)
 
     def _build_left(self, parent: tk.Frame) -> None:
-        """左栏：参数与播放控制（成员C 填充）。"""
+        """左栏：参数与播放控制（聂莹莹 填充）。"""
         left = tk.Frame(parent, bg=theme.COLORS["primary_light"],
                         width=theme.SIZES["left_w"], bd=1, relief=tk.SOLID)
         left.pack(side=tk.LEFT, fill=tk.Y, padx=(0, theme.SIZES["gap"]))
@@ -101,10 +101,10 @@ class ComplementApp:
         ttk.Button(left, text="自动播放", command=self._on_auto).pack(
             fill=tk.X, padx=16, pady=4)
 
-        # TODO(成员C): 字长单选、X/Y 输入框、加减切换、调速滑块、示例库
+        # TODO(聂莹莹): 字长单选、X/Y 输入框、加减切换、调速滑块、示例库
 
     def _build_center(self, parent: tk.Frame) -> None:
-        """中栏：四码对照 + 进位链 + 数轴（成员D 挂载 Canvas）。"""
+        """中栏：四码对照 + 进位链 + 数轴（聂莹莹 挂载 Canvas）。"""
         center = tk.Frame(parent, bg=theme.COLORS["bg"])
         center.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
@@ -121,13 +121,13 @@ class ComplementApp:
         self.canvas.pack(fill=tk.BOTH, expand=True, padx=16, pady=(0, 16))
         self.canvas.create_text(
             20, 20, anchor="nw",
-            text="[占位] 位网格与进位箭头由成员D 在 feature/canvas-render 实现",
+            text="[占位] 位网格与进位箭头由聂莹莹 在 feature/canvas-render 实现",
             font=theme.ui_font(self.root, "small"),
             fill=theme.COLORS["muted"],
         )
 
     def _build_right(self, parent: tk.Frame) -> None:
-        """右栏：步骤日志 + 溢出结论（成员C 填充）。"""
+        """右栏：步骤日志 + 溢出结论（聂莹莹 填充）。"""
         right = tk.Frame(parent, bg=theme.COLORS["panel"],
                          width=theme.SIZES["right_w"], bd=1, relief=tk.SOLID)
         right.pack(side=tk.RIGHT, fill=tk.Y, padx=(theme.SIZES["gap"], 0))
@@ -172,8 +172,8 @@ class ComplementApp:
     def _on_auto(self) -> None:
         self._set_status("自动播放功能开发中")
 
-    # TODO(成员C): 实现状态机切换、输入校验、日志滚动、快捷键绑定
-    # TODO(成员D): 在 canvas 上调用 BitGrid / NumberLine 渲染
+    # TODO(聂莹莹): 实现状态机切换、输入校验、日志滚动、快捷键绑定
+    # TODO(聂莹莹): 在 canvas 上调用 BitGrid / NumberLine 渲染
 
     def run(self) -> None:
         self.root.mainloop()
