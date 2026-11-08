@@ -53,7 +53,8 @@ def negate(bits: List[int]) -> Optional[Tuple[List[int], List[int], List[dict]]]
                    f"（共 {n} 位，符号位也参与）"),
     }]
 
-    # 加一时，只有在「进位真正传过去」的位上才值得生成一条步骤
+    # 加一时，进位只传到「第一个原为 0 的位」就停；之后的位不再变化，
+    # 不必为它们生成步骤（否则 16 位会多出十几条无意义记录）。
     for bit in range(n):
         carry = carries[bit]
         digit = result[n - 1 - bit]
@@ -68,6 +69,8 @@ def negate(bits: List[int]) -> Optional[Tuple[List[int], List[int], List[dict]]]
             "col": bit,
             "detail": detail,
         })
+        if carry == 0:                   # 进位停止，更高位保持不变
+            break
 
     trace.append({
         "index": len(trace) + 1,
