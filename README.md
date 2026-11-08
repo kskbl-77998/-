@@ -67,15 +67,31 @@ git clone https://github.com/<你的用户名>/twos-complement-simulator.git
 cd twos-complement-simulator
 
 # 3. 运行
-python main.py
+py main.py
 ```
 
-Windows 下若 `python` 不可用，改用 `py main.py`。
+**三种启动方式，任选一种**
+
+| 方式 | 操作 | 适合 |
+| :--- | :--- | :--- |
+| 双击 | 双击根目录的 `启动程序.bat` | 最省事，不用开终端 |
+| 命令行 | `py main.py` | 想看报错信息 |
+| VS Code | 打开文件夹 → 打开 `main.py` → 按 `F5` | 要打断点调试 |
+
+> ⚠️ **Windows 上请优先用 `py` 而不是 `python`。**
+> 很多机器（包括本项目的开发机）里，`python` 指向的是微软应用商店的**占位程序**（`WindowsApps\python.exe`，0 字节），
+> 运行时直接返回 `9009` 错误、什么也不打印。`py` 是 Windows 官方的启动器，会正确找到已安装的 Python。
+>
+> 如果 `py` 也没有反应，执行 `py --version` 检查；仍不行就去 <https://www.python.org/downloads/> 重装，
+> 安装第一页**务必勾选** `Add python.exe to PATH`。
+
+**当前版本提示**：程序已能启动窗口，但界面仍在开发中（M3 里程碑），
+主区域的位网格与日志尚未接上算法，属于**预期现象**，见 [`docs/UI_Branch_Guide.md`](docs/UI_Branch_Guide.md)。
 
 ### 3. 运行测试（可选）
 
 ```bash
-python -m pytest tests/ -v
+py -m pytest tests/ -v
 ```
 
 ---
