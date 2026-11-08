@@ -116,8 +116,12 @@ twos-complement-simulator/
 │   └── ui_wireframe.png
 ├── docs/
 │   ├── Team_Task_Allocation.md      # 五人任务分配
+│   ├── UI_Branch_Guide.md           # UI 分支任务书（零基础操作手册）
 │   ├── GitHub_Setup_Guide.md        # 仓库搭建与推送手册
 │   ├── algorithm_notes.md           # 算法推导笔记（张家昂）
+│   ├── Test_Case_Matrix.md          # 16 条用例矩阵
+│   ├── examples/
+│   │   └── canvas_playground.py     # Canvas 参考实现（可直接运行）
 │   └── images/                      # 截图、冲突留档
 ├── src/
 │   ├── core/                        # 核心算法层（零 UI 依赖）

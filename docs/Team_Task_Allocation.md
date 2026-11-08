@@ -137,6 +137,8 @@ docs: 补充 README 的安装与运行说明
 | 依赖 | 只依赖 `models.py` 的字段（可用 mock 数据先行开发） |
 
 > **为什么分两条分支**：布局与渲染是两件事，分开做能让每次 PR 的改动量可控（≤ 300 行），Review 也更容易。先合并布局，再基于最新 `main` 做渲染。
+>
+> 📘 **详细操作手册见 [`UI_Branch_Guide.md`](UI_Branch_Guide.md)**：13 个可交付小任务、每个控件的代码片段、渲染硬指标、12 个常见坑，以及可直接运行的参考实现 [`docs/examples/canvas_playground.py`](examples/canvas_playground.py)。
 
 **第一阶段：界面骨架（`feature/ui-layout`）**
 
